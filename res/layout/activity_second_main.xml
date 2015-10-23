@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_width="fill_parent"
+	 android:layout_height="fill_parent" 
+	 android:background="#5f0101" >
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="15dp" >
+
+	        <TextView
+	            android:id="@+id/CountdownTimer"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/str_timer_label"
+	            android:textColor="#00FFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	        <TextView
+	            android:id="@+id/CountdownClock"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="end"
+	            android:gravity="end"
+	            android:textColor="#00FFFF"
+	            android:text="@string/str_CountdownClock_label"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    </LinearLayout>
+
+	    <Button
+	        android:id="@+id/btnSet"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:background="#0277BD"
+	        android:textColor="#00FFFF"
+	        android:textStyle="bold"
+	        android:text="@string/str_btn_label" />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="15dp" >
+
+	        <TextView
+	            android:id="@+id/DurationTimer"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/str_Durationtimer_label"
+	            android:textColor="#00FFFF"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	        <TextView
+	            android:id="@+id/DurationClock"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="end"
+	            android:gravity="end"
+	            android:textColor="#00FFFF"
+	            android:text="@string/str_DurationClock_label"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    </LinearLayout>
+
+	    <Button
+	        android:id="@+id/btnDuration"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:background="#0277BD"
+	        android:textColor="#00FFFF"
+	        android:textStyle="bold"
+	        android:text="@string/str_btnDuration_label" />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="15dp" >
+
+	        <TextView
+	            android:id="@+id/ringtonelabel"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_weight="1.17"
+	            android:gravity="center"
+	            android:textColor="#00FFFF"
+	            android:text="@string/str_ringtonelabel_label"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:textColor="#00FFFF"
+	        android:layout_marginRight="15dp" >
+
+	        <TextView
+	            android:id="@+id/ringtone"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:textColor="#00FFFF"
+	            android:text="@string/str_ringtone_label"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	    </LinearLayout>
+
+	    <Button
+	        android:id="@+id/selectringtone"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:background="#0277BD"
+	        android:textColor="#00FFFF"
+	        android:textStyle="bold"
+	        android:text="@string/selectringtone" />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	      	android:layout_marginBottom="0dp" >
+
+	        <TextView
+	            android:id="@+id/vibrate"
+	            android:layout_width="0dp"
+	            android:layout_height="46dp"
+	            android:layout_gravity="center_horizontal|center_vertical"
+	            android:gravity="start"
+	            android:layout_weight="0.14"
+	            android:paddingTop="7.5dp"
+	            android:layout_margin="15dp"
+	            android:textColor="#00FFFF"
+	            android:layout_marginBottom="0dp"
+	            android:text="@string/str_vibrate"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	        <Switch
+	            android:id="@+id/on_off_switch"
+	            android:layout_width="wrap_content"
+	            android:layout_height="50dp"
+	            android:layout_margin="15dp"
+	            android:textColor="#00FFFF"
+	            android:layout_marginBottom="0dp"
+	            android:switchTextAppearance="@style/SwitchTextAppearance"
+	            android:textOff="OFF"
+	            android:textOn="ON" />
+	    </LinearLayout>
+
+    	<LinearLayout
+	        android:id="@+id/smoketime"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="0dp"
+	        android:layout_margin="15dp"
+	        android:orientation="horizontal" >
+	    
+	        <TextView
+	            android:id="@+id/smoketime_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="start"
+	            android:gravity="start"
+	            android:textColor="#00FFFF"
+	            android:text="@string/smoketime_label"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	        <TextView
+	            android:id="@+id/smoketimeClock"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="end"
+	            android:gravity="end"
+	            android:textColor="#00FFFF"
+	            android:text="@string/str_smokeTimeClock_label"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    </LinearLayout>
+	
+    	<Button
+            android:id="@+id/smoketimebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FFFF"
+            android:background="#0277BD"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="7dp"
+            android:textStyle="bold"
+            android:text="@string/smoketime" />
+
+		<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+    	    android:layout_marginTop="0dp"
+    	    android:layout_marginBottom="25dp" >
+	    	
+	     <TextView
+	            android:id="@+id/smoketimemode"
+	            android:layout_width="0dp"
+	            android:layout_height="46dp"
+	            android:layout_gravity="center_horizontal|center_vertical"
+	            android:layout_weight="0.14"
+	            android:gravity="start"
+	            android:paddingTop="7.5dp"
+	            android:layout_margin="15dp"
+	            android:textColor="#00FFFF"
+	            android:text="@string/str_smoketimemode"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	     
+	     <Switch
+	            android:id="@+id/smoketime_on_off_switch"
+	            android:layout_width="wrap_content"
+	            android:layout_height="50dp"
+	            android:layout_marginTop="0dp"
+	            android:layout_margin="15dp"
+	            android:switchTextAppearance="@style/SwitchTextAppearance"
+	            android:textColor="#000000"
+	            android:textOff="OFF"
+	            android:textOn="ON" />
+	    
+	    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

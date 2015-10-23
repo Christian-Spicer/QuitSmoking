@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Quit Smoking</string>
+    <string name="title">Countdown To Smoko</string>
+    <string name="textTimer">00:00:00</string>
+    <string name="textStartStop">Start</string>
+    <string name="textSettings">Settings</string>
+    <string name="title_activity_second_main">Settings</string>
+    <string name="str_btn_label">Set Countdown Timer</string>
+    <string name="str_timer_label">Countdown Timer</string>
+    <string name="str_CountdownClock_label">00:00</string>
+    <string name="str_Durationtimer_label">Extra Time</string>
+    <string name="str_DurationClock_label">00:00</string>
+    <string name="str_btnDuration_label">Set Extra Time</string>
+    <string name="selectringtone">Select Ringtone</string>
+    <string name="str_ringtone_label">Ringtone</string>
+    <string name="str_ringtonelabel_label">Selected Ringtone</string>
+    <string name="str_exit">Exit</string>
+    <string name="str_vibrate">Vibrate Mode</string>
+    <string name="str_smoketimemode">Smoko Mode</string>
+    <string name="str_instructions">Instructions</string>
+    <string name="about">About</string>
+    <string name="str_about">the intructions</string>
+    <string name="smoketime">Set Smoko Time</string>
+    <string name="smoketime_label">Smoko Time</string>
+    <string name="str_smokeTimeClock_label">00:00</string>
+</resources>

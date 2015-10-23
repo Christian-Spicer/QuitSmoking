@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+android:oneshot="false" >
+<item
+android:drawable="@drawable/caterpillar_smoking1"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking2"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking3"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking4"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking5"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking6"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking7"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking8"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking9"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking10"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking11"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking12"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking13"
+android:duration="150"/>
+<item
+android:drawable="@drawable/caterpillar_smoking14"
+android:duration="2000"/>
+</animation-list>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:orientation="horizontal" >
+
+    <com.ChristianSpicer.quitsmoking.NoSmoking
+        android:id="@+id/nosmoking"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_column="0"
+        android:layout_row="0" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_column="1"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:gravity="start"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_row="0"  />
+
+    <Space
+        android:layout_column="2"
+        android:layout_gravity="fill_vertical"
+        android:layout_row="0" />
+
+</GridLayout>
