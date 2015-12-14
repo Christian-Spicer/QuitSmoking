@@ -16,12 +16,16 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.DeadObjectException;
 import android.os.IBinder;
+import android.os.PowerManager;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
+import android.os.PowerManager.WakeLock;
 import android.widget.Toast;
 
 public class TimeService extends Service implements SharedPreferences.OnSharedPreferenceChangeListener, SensorEventListener{
 
+	PowerManager mgr = (PowerManager)AppContext.getContext().getSystemService(Context.POWER_SERVICE);
+	WakeLock wakeLock = mgr.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "MyWakeLock");
 	CounterTimer countdownclock = new CounterTimer();
 	static SharedPreference sharedPreference = new SharedPreference();
 	@SuppressWarnings("deprecation")
@@ -176,6 +180,7 @@ public class TimeService extends Service implements SharedPreferences.OnSharedPr
 		IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_OFF);
         registerReceiver(mReceiver, filter);
 		Shaking();
+		wakeLock.acquire();
 		return Service.START_STICKY;
 	}
 	private void Shaking()
@@ -222,6 +227,7 @@ public class TimeService extends Service implements SharedPreferences.OnSharedPr
         unregisterReceiver(mReceiver);
         // Unregister from SensorManager.
         mSensorManager.unregisterListener(this);
+        wakeLock.release();
 		//Toast.makeText(getApplicationContext(), "Service Stopped", Toast.LENGTH_LONG).show();
 	}
 	@Override
